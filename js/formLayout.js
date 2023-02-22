@@ -16,8 +16,7 @@ let formDSToneInputContainer = document.getElementById('formDSToneInputContainer
 let formMarketingInputContainer = document.getElementById('formMarketingInputContainer');
 
 let formInputDiv = document.getElementById('formInputDiv');
-let prevBtn = document.getElementById('prevBtn');
-let nextBtn = document.getElementById('nextBtn');
+
 
 function companyFormPrevFunc(event){
     event.preventDefault();
