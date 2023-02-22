@@ -1,0 +1,20 @@
+{
+    "name": "mupsh/ai_content_generation_project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Upshur06",
+            "email": "38439264+Upshur06@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6",
+        "slim/twig-view": "^3.3",
+        "twig/twig": "^3.5"
+    }
+}

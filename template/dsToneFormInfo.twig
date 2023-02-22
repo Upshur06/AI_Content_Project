@@ -1,0 +1,130 @@
+{% extends 'base.twig' %}
+
+{% block title %}design style tone{% endblock %}
+
+{% block content %}
+
+<div id="dsToneContainer" class="container p-5">
+
+    <h3 class="">Look, Feel and Marketing</h3>
+
+    <div class="container">
+        <div class="mx-4">
+            <form action="" id="formDSToneInputContainer">
+                <div class="border my-3 py-5 px-3">
+                    <h5 class="">Select a Design Tone</h5>
+                    <label>Select 2 options</label>
+                    
+                    <div class="row m-3 py-2 px-1">
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="informative" name="tone-informative" id="tone-informative" required>
+                            <label class="form-check-label">
+                                Informative
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="directive" name="tone-direct" id="tone-direct" required>
+                            <label class="form-check-label">
+                                Direct
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="empathetic" name="tone-empathetic" id="tone-empathetic" required>
+                            <label class="form-check-label">
+                                Empathetic
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row m-3 py-2 px-1">
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="helpful" name="tone-helpful" id="tone-helpful" required>
+                            <label class="form-check-label">
+                                Helpful
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="clear" name="tone-clear" id="tone-clear" required>
+                            <label class="form-check-label">
+                                Clear
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="inclusive" name="tone-inclusive" id="tone-inclusive" required>
+                            <label class="form-check-label">
+                                Inclusive
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row m-3 py-2 px-1">
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="authoritative" name="tone-authoritative" id="tone-authoritative" required>
+                            <label class="form-check-label">
+                                Authoritative
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="concise" name="tone-concise" id="tone-concise" required>
+                            <label class="form-check-label">
+                                Concise
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="warm" name="tone-warm" id="tone-warm" required>
+                            <label class="form-check-label">
+                                Warm
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row m-3 py-2 px-1">
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="friendly" name="tone-friendly" id="tone-friendly" required>
+                            <label class="form-check-label">
+                                Friendly
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="persuasive" name="tone-persuasive" id="tone-persuasive" required>
+                            <label class="form-check-label">
+                                Persuasive
+                            </label>
+                        </div>
+
+                        <div class="col-4 form-check">
+                            <input class="form-check-input" type="checkbox" value="witty" name="tone-witty" id="tone-witty" required>
+                            <label class="form-check-label">
+                                Witty
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/10" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormDSToneFunc(event)">Next</button>
+                        {# <a href="/form/12" class="btn btn-primary">Next</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

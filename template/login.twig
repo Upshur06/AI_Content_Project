@@ -1,0 +1,38 @@
+{% extends "base.twig" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+    <div class="container d-flex flex-column align-items-center justify-content-center pb-5" style="height: 100vh;">
+        <h2>User Login</h2>
+
+        <form class="border d-flex flex-column align-items-center justify-content-center" id="logInForm" onsubmit="LoginFunc(event)" style="height: 330px; width:400px">
+            <div class="col-8 mb-4">
+                <label class="form-label">Username:</label>
+                <div>
+                    <input class="form-control" name="username" type="text">
+                </div>
+            </div>
+
+            <div class="col-8 mb-4">
+                <label class="form-label">Password:</label>
+                <div>
+                    <input class="form-control" name="password" type="password">
+                </div>
+            </div>
+
+            <div class="d-grid col-6">
+                <button type="submit" class="btn btn-primary">
+                    Login
+                </button>
+            </div>
+        </form>
+
+        <div>
+            <a href="/">home</a>
+        </div>
+    </div>
+
+<script src="js/login.js"></script>
+{% endblock %}

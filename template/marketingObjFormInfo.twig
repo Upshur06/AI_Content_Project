@@ -1,0 +1,61 @@
+{% extends 'base.twig' %}
+
+{% block title %}marketing objective{% endblock %}
+
+{% block content %}
+
+
+<div id="marketingObjContainer" class="container p-5">
+
+    <h3 class="">Look, Feel and Marketing</h3>
+
+    <div class="container">
+
+        <div class="mx-4">
+            <form action="" id="formMarketingInputContainer">
+                <div class="border my-3 p-5">
+                    <h5 class="">Primary Objective from a Marketing Campaign</h5>
+                    <label class="form-check-label">
+                        Select 2 options
+                    </label>
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="brandawareness" name="objective-brand-awareness" id="objective-brand-awareness" required>
+                        <label class="form-check-label">
+                            Brand Awareness
+                        </label>
+                    </div>
+
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="leadgeneration" name="objective-lead-generation" id="objective-lead-generation" required>
+                        <label class="form-check-label">
+                            Lead Generations
+                        </label>
+                    </div>
+
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="directsales" name="objective-direct-sales" id="objective-direct-sales" required>
+                        <label class="form-check-label">
+                            Direct Sales
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/11" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormMarketingFunc(event)">Next</button>
+                        {# <a href="" class="btn btn-primary">Next</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

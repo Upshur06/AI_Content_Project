@@ -1,0 +1,73 @@
+/* h2{
+    color: 'green';
+}
+
+p{
+    color: "orange";
+}
+
+#selection{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+} */
+
+/* @keyframes trasnsitionprac{
+    from {position: relative;
+        top: 0;
+        left: 0;
+    }
+    to {
+        position: relative;
+        left: 200px;
+    }
+} */
+
+/* #practdiv{
+    border: 2px solid green;
+    height: 80px;
+    width: 130px;
+    background-color: red;
+    animation-name: trasnsitionprac;
+    animation-duration: 3s;
+} */
+
+/* @keyframes transitionForward{
+    from {position: relative;
+        left: -50px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        left: 0;
+        opacity: 1;
+    }
+} */
+
+/* #businessContainer, #companyContainer, #companyInfoContainer, #genderContainer, #geoContainer, #ageRangeContainer, #incomeRangeContainer, #brandsContainer, #firstDSContainer, #secondsDSContainer, #dsToneContainer, #marketingObjContainer{
+    animation-name: transitionForward;
+    animation-duration: 1.5s;
+} */
+
+/* @keyframes transitionPrev{
+    from {position: relative;
+        left: 50px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        left: 0;
+        opacity: 1;
+    }
+} */
+
+/* .container{
+    animation-name: transitionPrev;
+    animation-duration: 1.5s;    
+} */
+
+/* .transitionForward{
+    border: 2px solid palegreen;
+}  */
+
+/* .transitionBackward{
+    border: 4px solid rgb(171, 69, 41);
+} */

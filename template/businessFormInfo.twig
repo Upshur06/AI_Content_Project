@@ -1,0 +1,92 @@
+{% extends 'base.twig' %}
+
+{% block title %}business info{% endblock %}
+
+{% block content %}
+
+<div id="businessContainer" class="container p-5 transitionForward transitionBackward">
+
+    <h3 class="">Business Infomation</h3>
+
+    <div class="container">
+
+        <div class="mx-4">
+            <form action="" id="formBussinessInputContainer">
+                <div class='border my-3 p-5' id="formInputDiv">
+                    <div class="row">
+                        <div class="col-5 mb-3">
+                            <label class="form-label">Company Name: </label>
+                            <div>  
+                                <input class="form-control" type="text" name="company-name" id="company-name">
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col-5 mb-3">
+                            <label class="form-label">Project Contact: </label>
+                            <div>
+                                <input class="form-control" type="text" name="project-contact" id="project-contact">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Website</label>
+                        <div>
+                            <input class="form-control" type="text" name="company-website" id="company-website">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8 mb-3">
+                            <label class="form-label">Address</label>
+                            <div>
+                                <input class="form-control" type="text" name="company-address" id="company-address">
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <label class="form-label">City/Town</label>
+                            <div>
+                                <input class="form-control" type="text" name="company-city" id="company-city">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 mb-3">
+                            <label class="form-label">State</label>
+                            <div>
+                                <input class="form-control" type="text" name="company-state" id="company-state">
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <label class="form-label">Zip</label>
+                            <div>
+                                <input class="form-control" type="text" name="company-zip" id="company-zip">
+                            </div>
+                        </div>
+                        <div class="col-5 mb-3">
+                            <label class="form-label">Phone</label>
+                            <div>
+                                <input class="form-control" type="text" name="company-phone" id="company-phone">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        {# <a href="" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="businessFormFunc(event)">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+    <script src="/js/formLayout.js"></script>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.twig" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+    <div class="container d-flex flex-column align-items-center justify-content-center pb-5" style="height: 100vh;">
+        <h2>User Registration</h2>
+
+        <form class="border d-flex flex-column align-items-center justify-content-center" id="registrationForm" onsubmit="RegistrationFunc(event)" style="height: 520px; width:400px">
+            <div class="col-8 mb-3">
+                <label class="form-label">Firist Name:</label>
+                <div>
+                    <input class="form-control" name="firstName" type="text">
+                </div>
+            </div>
+
+            <div class="col-8 mb-3">
+                <label class="form-label">Last Name:</label>
+                <div>
+                    <input class="form-control" name="lastName" type="text">
+                </div>
+            </div>
+
+            <div class="col-8 mb-3">
+                <label class="form-label">E-mail:</label>
+                <div>
+                    <input class="form-control" name="email" type="text">
+                </div>
+            </div>
+
+            <div class="col-8 mb-3">
+                <label class="form-label">Username:</label>
+                <div>
+                    <input class="form-control" name="username" type="text">
+                </div>
+            </div>
+
+            <div class="col-8 mb-3">
+                <label class="form-label">Password:</label>
+                <div>
+                    <input class="form-control" name="password" type="password">
+                </div>
+            </div>
+
+            <div class="d-grid col-6">
+                <button type="submit" class="btn btn-primary">
+                    Register
+                </button>
+            </div>
+        </form>
+
+        <div>
+            <a href="/">home</a>
+        </div>
+    </div>
+
+    <script src="js/registration.js"></script>
+{% endblock %}

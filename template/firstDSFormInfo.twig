@@ -1,0 +1,72 @@
+{% extends 'base.twig' %}
+
+{% block title %}first design style{% endblock %}
+
+{% block content %}
+
+<div id="firstDSContainer" class="container p-5">
+
+    <h3 class="">Look, Feel and Marketing</h3>
+
+    <div class="container">
+        <div class="mx-4">
+            <form action="" id="formfirstDSInputContainer">
+                <div class="border my-3 p-5">
+                    <h5 class="">Select a Design Style</h5>
+                    <label>Select 1 option</label>
+                    
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="corperate" name="style-corperate" id="style-corperate" required>
+                        <label class="form-check-label">
+                            Corperate
+                        </label>
+                    </div>
+
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="modern" name="style-modern" id="style-modern" required>
+                        <label class="form-check-label">
+                            Modern
+                        </label>
+                    </div>
+
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="classic" name="style-classic" id="style-classic" required>
+                        <label class="form-check-label">
+                            Classic
+                        </label>
+                    </div>
+
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="simple" name="style-simple" id="style-simple" required>
+                        <label class="form-check-label">
+                            Simple
+                        </label>
+                    </div>
+
+                    <div class="form-check m-3">
+                        <input class="form-check-input" type="checkbox" value="industrial" name="style-industrial" id="style-industrial" required>
+                        <label class="form-check-label">
+                            Industrial
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/8" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormFirstDSFunc(event)">Next</button>
+                        {# <a href="/form/10" class="btn btn-primary">Next</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

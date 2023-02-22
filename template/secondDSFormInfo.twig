@@ -1,0 +1,78 @@
+{% extends 'base.twig' %}
+
+{% block title %}second design style{% endblock %}
+
+{% block content %}
+
+<div id="secondsDSContainer" class="container p-5">
+
+    <h3 class="">Look, Feel and Marketing</h3>
+
+    <div class="container">
+        <div class="mx-4">
+            <form action="" id="formSecondDSInputContainer">
+                <div class="border my-3 p-5">
+                    <h5 class="">Select a Secondary Design Style</h5>
+                    <label>Select 1 option</label>
+                    
+                    <div class="row">
+                        <div class="col-5 form-check m-3">
+                            <input class="form-check-input" type="checkbox" value="vibrant" name="secondary-vibrant" id="secondary-vibrant" required>
+                            <label class="form-check-label">
+                                Vibrant
+                            </label>
+                        </div>
+
+                        <div class="col-5 form-check m-3">
+                            <input class="form-check-input" type="checkbox" value="elegant" name="secondary-elegant" id="secondary-elegant" required>
+                            <label class="form-check-label">
+                                Elegant
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 form-check m-3">
+                            <input class="form-check-input" type="checkbox" value="muted" name="secondary-muted" id="secondary-muted" required>
+                            <label class="form-check-label">
+                                Muted
+                            </label>
+                        </div>
+
+                        <div class="col-5 form-check m-3">
+                            <input class="form-check-input" type="checkbox" value="natural" name="secondary-natural" id="secondary-natural" required>
+                            <label class="form-check-label">
+                                Natural
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 form-check m-3">
+                            <input class="form-check-input" type="checkbox" value="clean" name="secondary-clean" id="secondary-clean" required>
+                            <label class="form-check-label">
+                                Clean
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/9" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormSecondDSFunc(event)">Next</button>
+                        {# <a href="/form/11" class="btn btn-primary">Next</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

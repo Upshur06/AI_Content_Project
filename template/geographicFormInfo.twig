@@ -1,0 +1,59 @@
+{% extends 'base.twig' %}
+
+{% block title %}geographic info{% endblock %}
+
+{% block content %}
+
+<div id="geoContainer" class="container p-5">
+
+    <h3 class="mb-3">Target Market</h3>
+
+    <div class="container py-3">
+
+        <div class="mx-4">
+            <form action="" id="formGeoInputContainer">
+                <div class="border px-4 py-4" style="height:300px">
+                    <label class="form-check-label">
+                        <h4>Where do they live?</h4>
+                    </label>
+                    <div class="form-check ms-4 my-4">
+                        <input class="form-check-input" type="checkbox" value="urban" name="location-urban" id="location-urban" required>
+                        <label class="form-check-label">
+                            Urban
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-4 my-4">
+                        <input class="form-check-input" type="checkbox" value="suburban" name="location-suburban" id="location-suburban" required>
+                        <label class="form-check-label">
+                            Suburban
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-4 my-4">
+                        <input class="form-check-input" type="checkbox" value="rural" name="location-rural" id="location-rural" required>
+                        <label class="form-check-label">
+                            Rural
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/4" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormGeoFunc(event)">Prev</button>
+                        {# <a href="/form/4" class="btn btn-primary">Prev</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

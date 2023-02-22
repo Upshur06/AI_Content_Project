@@ -1,0 +1,113 @@
+{% extends 'base.twig' %}
+
+{% block title %}age range{% endblock %}
+
+{% block content %}
+
+<div id="ageRangeContainer" class="container p-5">
+
+    <h3 class="mb-3">Target Market</h3>
+
+    <div class="container py-3">
+
+        <div class="mx-4">
+            <form action="" id="formAgeInputContainer">
+                <div class="border my-3 p-5">
+                    <label class="form-check-label">
+                        <h4>Age Range of Target Market</h4>
+                    </label>
+
+                    <div class="row">
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="under12" name="age-under-12" id="age-under-12" required>
+                            <label class="form-check-label">
+                                Under 12
+                            </label>
+                        </div>
+
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="40-50" name="age-40-50" id="age-40-50" required>
+                            <label class="form-check-label">
+                                40-50
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="13-19" name="age-13-19" id="age-13-19" required>
+                            <label class="form-check-label">
+                                13-19
+                            </label>
+                        </div>
+
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="51-60" name="age-51-60" id="age-51-60" required>
+                            <label class="form-check-label">
+                                51-60
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="20-25" name="age-20-25" id="age-20-25" required>
+                            <label class="form-check-label">
+                                20-25
+                            </label>
+                        </div>
+
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="60-65" name="age-60-65" id="age-60-65" required>
+                            <label class="form-check-label">
+                                60-65
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="26-31" name="age-26-31" id="age-26-31" required>
+                            <label class="form-check-label">
+                                26-31
+                            </label>
+                        </div>
+
+                        <div class="col-5 form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="65+" name="age-65-plus" id="age-65-plus" required>
+                            <label class="form-check-label">
+                                65+
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-check ms-3 my-3">
+                            <input class="form-check-input" type="checkbox" value="32-39"
+                            name="age-32-39" id="age-32-39" required>
+                            <label class="form-check-label">
+                                32-39
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/5" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormAgeRangeFunc(event)">Next</button>
+                        {# <a href="/form/7" class="btn btn-primary">Next</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

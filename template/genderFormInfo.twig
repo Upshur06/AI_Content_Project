@@ -1,0 +1,52 @@
+{% extends 'base.twig' %}
+
+{% block title %}gender info{% endblock %}
+
+{% block content %}
+
+<div id="genderContainer" class="container p-5">
+
+    <h3 class="mb-3">Target Market</h3>
+
+    <div class="container py-3">
+
+        <div class="mx-4">
+            <form action="" id="formGenderInputContainer">
+                <div class="border px-4 py-4" style="height:300px">
+                    <label class="form-check-label">
+                        <h4>Gender</h4>
+                    </label>
+                    <div class="form-check ms-4 my-5">
+                        <input class="form-check-input" type="checkbox" value="male" name="male-checkbox" id="male-checkbox" required>
+                        <label class="form-check-label">
+                            Male
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-4 my-5">
+                        <input class="form-check-input" type="checkbox" value="female" name="female-checkbox" id="female-checkbox" required>
+                        <label class="form-check-label">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary">Prev</button>
+                        {# <a href="/form/3" class="btn btn-primary">Prev</a> #}
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <button class="btn btn-primary" onclick="companyFormGenderFunc(event)">Next</button>
+                        {# <a href="/form/5" class="btn btn-primary">Next</a> #}
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div class="text-center">Copyright</div>
+    </div>
+</div>
+
+<script src="/js/formLayout.js"></script>
+
+{% endblock %}

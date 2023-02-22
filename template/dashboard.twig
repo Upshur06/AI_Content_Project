@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+
+{% block title %}Dashboard Page{% endblock %}
+
+{% block content %}
+
+    <div class="bg-secondary container-fluid pt-2 d-flex justify-content-center">
+        <div class="">
+            <h2 class="">Dashboard</h2>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end" style="width:10vw; position: relative; bottom: 46px; left: 75vw;">
+        <div class="">
+            <button class="btn btn-danger">
+                <a class="text-light" style="text-decoration:none;" href="/logout">Logout</a>
+            </button>
+        </div>        
+    </div>
+
+    <div class="container mt-4">
+        <div class="border p-2" style="width:28vw; height:200px">
+            <h3>Navigation</h3>
+            <hr>
+            <div class="me-4 d-flex flex-column">
+                <p><a style="text-decoration:none;" href="/updateprofile">Profile Update</a></p>
+                <p><a style="text-decoration:none;" href="/useredit">User Settings</a></p>
+                <p><a style="text-decoration:none;" href="/content">Content Info</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

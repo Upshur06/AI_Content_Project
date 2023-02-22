@@ -1,0 +1,109 @@
+{% extends 'base.twig' %}
+
+{% block title %}content{% endblock %}
+
+{% block content %}
+
+<div class="bg-secondary container-fluid pt-2 d-flex justify-content-center">
+    <div class="">
+        <h2 class="">Content</h2>
+    </div>
+</div>
+<div class="d-flex justify-content-end" style="width:10vw; position: relative; bottom: 38px; left: 75vw;">
+    <div class="">
+        <a style="" href="/dashboard">back</a>
+    </div>        
+</div>
+
+<div class="container mt-3">
+
+    <h3 class="">Content Object Info</h3>
+
+    <div class="container">
+        <div class="border mb-3 ps-4 " id="summaryDiv">
+            <div class="row px-3 py-2 my-2">
+                <div class="ms-1 px-2 py-1" style="background-color:grey; width:60px; border-top-left-radius: 15px; border-bottom-right-radius: 20px; "></div>
+                <p class="col-4 my-2">
+                    Here is the Business Summary
+                </p>
+                <a class="col" id="summaryLink" data-bs-toggle="collapse"href="#summaryInfo" role="button">
+                    <img class="" src="template/image/add_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </a>
+            </div>
+
+            <div class="col-10 ms-5 mt-3 mb-3">
+                <div class="collapse" id="summaryInfo">
+                    <div class="card card-body">
+                        <div id="inputSummaryInfo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border mb-3 ps-4" id="profileDiv">
+            <div class="row px-3 py-2 my-2">
+                <div class="ms-1 px-2 py-2" style="background-color:grey; width:60px; border-top-left-radius: 15px; border-bottom-right-radius: 20px; "></div>
+                <p class="col-4 my-2">
+                    Here is the Business Profile
+                </p>
+                <a class="col" id="profileLink" data-bs-toggle="collapse"href="#profileInfo" role="button">
+                    <img class="" src="template/image/add_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </a>
+            </div>
+
+            <div class="col-10 ms-5 mt-3 mb-3">
+                <div class="collapse" id="profileInfo">
+                    <div class="card card-body">
+                        <div id="inputProfileInfo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border mb-3 ps-4" id="avatarDiv">
+            <div class="row px-3 py-2 my-2">
+                <div class="ms-1 px-2 py-2" style="background-color:grey; width:60px; border-top-left-radius: 15px; border-bottom-right-radius: 20px; "></div>
+                <p class="col-4 my-2">
+                    Here is the Buisiness Avatar 
+                </p>
+                <a class="col" id="avatarLink" data-bs-toggle="collapse"href="#avatarInfo" role="button">
+                    <img class="" src="template/image/add_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </a>
+            </div>
+
+            <div class="col-10 ms-5 mt-3 mb-3">
+                <div class="collapse" id="avatarInfo">
+                    <div class="card card-body">
+                        <div id="inputAvatarInfo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border mb-3 ps-4" id="strategyDiv">
+            <div class="row px-3 py-2 my-2">
+                <div class="ms-1 px-2 py-2" style="background-color:grey; width:60px; border-top-left-radius: 15px; border-bottom-right-radius: 20px; "></div>
+                <p class="col-4 my-2">
+                    Here is the Buisiness Strategy 
+                </p>
+                <a class="col" id="strategyLink" data-bs-toggle="collapse"href="#strategyInfo" role="button">
+                    <img class="" src="template/image/add_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </a>
+            </div>
+
+            <div class="col-10 ms-5 mt-3 mb-3">
+                <div class="collapse" id="strategyInfo">
+                    <div class="card card-body">
+                        <div id="inputStrategyInfo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="text-center mt-5">Copyright</div>
+    </div>
+</div>
+
+    <script src="js/contentView.js"></script>
+
+{% endblock %}
