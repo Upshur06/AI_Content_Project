@@ -2,7 +2,6 @@ console.log('form layout');
 let formContainer = document.getElementById('formContainer');
 let practdiv = document.getElementById('practdiv');
 
-// form containers
 let formBussinessInputContainer = document.getElementById('formBussinessInputContainer');
 let formCompanyDetailInputContainer = document.getElementById('formCompanyDetailInputContainer');
 let formCompanyInfoInputContainer = document.getElementById('formCompanyInfoInputContainer');
@@ -20,6 +19,22 @@ let formInputDiv = document.getElementById('formInputDiv');
 let prevBtn = document.getElementById('prevBtn');
 let nextBtn = document.getElementById('nextBtn');
 
+function companyFormPrevFunc(event){
+    event.preventDefault();
+    let call = fetch('/form/1');
+
+    call.then(response => {
+        console.log(response);
+        return response.text();
+    }).then(result => {
+        formContainer.innerHTML = result;
+        console.log('working');
+    }).catch(err => {
+        console.log("Something broke.");
+
+        return false;
+    });
+}
 
 function businessFormFunc(event){
     event.preventDefault();
